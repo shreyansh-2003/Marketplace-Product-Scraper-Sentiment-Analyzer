@@ -151,11 +151,14 @@ The backend modules include:
 
 <img width="625" alt="Product Listing" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/0ee79a7f-6892-45b7-953a-e13be7940178">
 
-<br><br>
+<br>
+
 
 #### Sample Product Listing comparative analysis through visualisations
 <img width="1070" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/a20ba0cc-936b-4f8b-b701-09beb5294f50">
-<br><br>
+<br>
+
+
 #### Sample Reviews and NLP analysis through visualisations
 
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/484e8640-568d-4076-807e-6a0b08bdbed4)
