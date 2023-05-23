@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> <!-- Shreyansh is Stupid -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+      <!-- site metas -->
+      <meta name="author" content="Shreyansh Padarha"/>
+      <!-- bootstrap css --><!--
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}" />
+
+         <-- style css --
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='style.css') }}"/>
+         <-- Responsive--
+         <link rel="stylesheet" href="static/responsive.css"/>
+         <-- Scrollbar Custom CSS --
+         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+         <-- owl stylesheets --
+         <link rel="stylesheet" href="static/owl.carousel.min.css"/>
+         <link rel="stylesheet" href="static/owl.theme.default.min.css"/>
+         -->
+
+            <!-- bootstrap css -->
+         <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'bootstrap.min.css')}}">
+         <!-- style css -->
+         <link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='style.css')}}">
+         <!-- Responsive-->
+         <link rel="stylesheet" href="{{url_for('static',filename ='responsive.css')}}">
+         <!-- Scrollbar Custom CSS -->
+         <link rel="stylesheet" href="{{url_for('static',filename ='jquery.mCustomScrollbar.min.css')}}">
+         <!-- owl stylesheets -->
+         <link rel="stylesheet" href="{{url_for('static',filename ='owl.carousel.min.css')}}">
+         <link rel="stylesheet" href="{{url_for('static',filename = 'owl.theme.default.min.css')}}">
+
+
+     </head>
+   <body>
+
+      <!--header section start -->
+      <div class="header_section">
+         <!--banner section start -->
+         <div class="banner_section layout_padding">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital"><span class="font_size_90">E-commerce Websites Product Comparer</span><hr></h4>
+                                 <h5 class="banner_text", style="font-size:24px;"><span style="color:yellow;">Products Comparison on Amazon and Flipkart</span> based on their <b>prices, ratings and reviews</b>, along with Product-Specific <span style="color:yellow;">Sentiment Analysis Simulations</span> for Amazon Products.</h5>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="{{url_for('static',filename = 'images/img-1.png')}}" class="image_1"></div>
+                           </div>
+                        </div>
+                        <div class="button_main">
+                           <form action="{{url_for('search_bar')}}" method="POST" >
+
+                           <input type="text" class="Enter_text" style = "font-weight: bold; color : black; font-size:30px;"
+                                  placeholder="Enter Product Name" name="prod_name"><br></input>
+                              <input type="text" style = "color : black; font-size:20px;"  class="Enter_text" placeholder="Enter Brand Name (Optional)" name="brand_name"></input>
+                           <button class="search_text">Search</button>
+
+
+
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12">
+                  <h4 class="information_text">About the Developer</h4>
+                  <p class="dummy_text">I'm Shreyansh Padarha, currently pursuing a Bachelor's Of Data Science from Christ (Deemed to be) University, Pune Lavasa Campus.
+                     I'm an inquisitive personality, ready to grow, learn and gain knowledge from any opportunity that presents itself. My proficency lies in Data Analysis, Handling and exploration using Python, MySQL, R Programming.   </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="information_main">
+                     <h4 class="information_text">Contact Us</h4>
+                     <p class="call_text"><a href="tel:+919441779902">+91 9441779902</a></p>
+                     <p class="call_text"><a href="mailto:shreyansh.padarha@bds.christuniversity.in">shreyansh.padarha@bds.christuniversity.in</a></p>
+                     <p class="call_text"><a href="mailto:shreyansh.padarha@hotmail.com">shreyansh.padarha@hotmail.com</a></p>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="{{url_for('static',filename = 'images/fb-icon.png')}}"></a></li>
+                           <li><a href="#"><img src="{{url_for('static',filename = 'images/instagram-icon.png')}}"></a></li>
+                           <li><a href="https://www.linkedin.com/in/shreyansh-padarha-b7b005241/"><img src="{{url_for('static',filename = 'images/linkedin-icon.png')}}">></a></li>
+                           <li><a href="#"><img <img src="{{url_for('static',filename = 'images/twitter-icon.png')}}">></a></li>
+                        </ul>
+             ˳        </div>
+                  </div>
+               </div>
+            </div>
+            <h1 class="copyright_text">
+               Copyright 2022 All Right Reserved <a href="https://www.linkedin.com/in/shreyansh-padarha-b7b005241/"> Shreyansh Padarha</a>
+            </h1>
+         </div>
+      </div>
+
+      <script>
+         console.log("Hai");
+      </script>
+   </body>
+</html>
+

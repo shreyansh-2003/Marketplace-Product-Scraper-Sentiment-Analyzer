@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='graph_style.css')}}">
+<head>
+    <div><center>
+    <h1 style = "color: purple">Sentiment Analysis on the product reviews (ROBERTA & VADER MODEL)<br><h1>
+        </center>
+    </div>
+</head>
+<body style="background-color:ivory;">
+
+
+ <div class="product" >
+        <div class="product-img"><center>
+            <img src = {{prod_img}} title="Product title"></center>
+        </div>
+
+        <div class="product-info" style = "color : black; font-weight : bold;">
+                <input type="hidden" id="slider_input" name="hidden" />
+            <h3 name="p_name" ><center>{{prod_name}}</center>></h3><hr>
+
+            <div class="price" style = "font-weight : bold; "><center>Product Price :
+                <span class="discount">₹ {{prod_price}}</span></center>
+            </div>
+            <div class="price" style = "font-weight : bold; "><center>Product Ratings :
+                <span class="discount">{{prod_rat}}</span><span style ="color: gold; font-size :20 px;"> ★</span></center>
+            </div>
+            <div class="price" style = "font-weight : bold; "><center>Ratings Count :
+                <span class="discount">{{prod_rat_count}}</span></center>
+            </div>
+                <div class="price" style = "font-weight : bold; color:purple" ><br><center>
+                    E-commerce Website <br><img style = "width: 15%; height: 4%;"
+                        src="static/images/amz.png"></center></div>
+
+        <div class="product-btns" style = "color:blue;ß"><a href={{prod_url}}><center>Product Link</center>
+
+        </div>
+            <hr><br>
+    </div>
+
+
+
+
+<div><center>
+    <img src="static/images/senti_1_wordcloud.png" alt="Snow" class = "word_cloud">
+</center>
+</div>
+<div><center><img src="static/images/senti_2_sentimentPlot.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_3_densityPlot.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_4_modelVals.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_5_ratingsPlot.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_6_sizeCompPlot.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_7_compModels.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_8_plotVader.png" alt="Snow" class = "center"></center></div>
+<div><center><img src="static/images/senti_9_plotRoberta.png" alt="Snow" class = "center"></center></div>
+
+</body>
+</html>

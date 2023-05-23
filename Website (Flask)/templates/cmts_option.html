@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  background-color: ivory;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: "Orbitron", sans-serif;
+  top: 50%;
+  left: 50%;
+  padding: 20px 0;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.stopwatch {
+  position: relative;
+  width: 92%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 4%;
+  padding: 40px 0;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+input {
+  width: 500px;
+  height: 80px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s;
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  transform: scale(103%);
+  transition: all 0.3s;
+}
+
+.controls {
+  width: 90%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 100%;
+  margin: auto 5px;
+  height: 45px;
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  --_p: 0%;
+}
+
+@keyframes active {
+  from {
+    transform: translateY(1px);
+  }
+
+  to {
+    transform: translateY(2px);
+  }
+}
+
+button:active {
+  animation: active 1s 1;
+  transition: all 0.1s;
+}
+
+button:nth-last-of-type(1) {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 50%, #e2742b 0)
+    var(--_p, 100%) / 200% no-repeat;
+  transition: 0.4s;
+}
+
+button:nth-last-of-type(1):hover {
+  color: #e2742b;
+}
+
+button:nth-last-of-type(2) {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 50%, #d23332 0)
+    var(--_p, 100%) / 200% no-repeat;
+  transition: 0.4s;
+}
+
+button:nth-last-of-type(2):hover {
+  color: #d23332;
+}
+
+button:nth-last-of-type(3) {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 50%, #20b380 0)
+    var(--_p, 100%) / 200% no-repeat;
+  transition: 0.4s;
+}
+
+button:nth-last-of-type(3):hover {
+  color: #20b380;
+}
+
+#accept {
+  background: linear-gradient(90deg, black 50%, #d23332 0) var(--_p, 100%) /
+    200% no-repeat;
+  transition: 0.4s;
+}
+
+#accept:hover {
+  color: #d23332;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: auto;
+  border-radius: 5px;
+  left: 50%;
+  font-family: "Orbitron", sans-serif;
+  margin-left: -140px;
+  height: auto;
+  top: 50%;
+  text-align: center;
+  margin-top: -150px;
+  background: #ffffff;
+  color: black;
+  z-index: 20;
+  -webkit-box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+
+#popup img {
+  width: 200px;
+  height: 150px;
+}
+
+#popup button {
+  width: 50%;
+  font-family: "Orbitron", sans-serif;
+}
+
+span {
+  color: #d23332;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="stopwatch">
+      <form = action="{{url_for('load_web_scrape')}}" method="POST">
+    <input id="input" name = "cmt_count" type="number" placeholder="Enter No. of Reviews to Scrape">
+
+  </div>
+  <div class="controls">
+    <button id="start">Start Scrapping Comments</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+

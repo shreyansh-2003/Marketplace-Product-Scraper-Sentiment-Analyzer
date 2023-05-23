@@ -1,0 +1,116 @@
+.product{
+            display: block;
+            width: 400px; /*Width Can be removed if you are adding this block inside a Bootstrap Column*/
+            height: auto;
+            background: ivory;
+            padding: 10px;
+            border: 2px solid #fff;
+            font-family: TT Commons;
+            transition: ease-in-out 0.6s all 0s;
+            float:left
+            
+        
+        }
+        .product .product-img img{
+            display: block;
+            width: 100%;
+            background: ivory;
+            height: auto;
+            object-fit: cover;
+            
+        }
+        .product .meta{
+            position: absolute;
+            top: 6.4%;
+            left: 21%;
+            
+        }
+        .product .meta .category{
+            background: rgb(248, 78, 78);
+            padding: 5px 10px 3px 10px;
+            border-radius: 30px;
+            
+        }
+        .product .meta .category a{
+            font-family: TT Commons;
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .product .product-info{
+            padding: 5px 15px 0 15px;
+            text-align: center;
+        }
+        .product .product-info h3{
+            font-size: 18px;
+            line-height: 24px;
+            margin: auto;
+            color: #333;
+        }
+        .product .product-info .price{
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .product .product-info .price .base{
+            text-decoration: line-through;
+            color: rgb(145, 145, 145);
+            padding-right:5px;
+        }
+        .product .product-info .price .discount{
+            color: rgb(231, 79, 79);
+        }
+        .product .product-btns{
+            display: block;
+            padding:0 15px;
+        }
+        .product .product-btns ul{
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .product .product-btns ul li{
+            display: inline-block;
+            list-style: none;
+            padding-right: 10px;
+        }
+        .product .product-btns ul li a{
+            font-size: 16px;
+            color: #333;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 37px;
+            border: 2px dotted #333;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: ease-in 0.6s all 0s;
+        }
+        .product .product-btns ul li a:hover{
+            background: rgb(243, 82, 82);
+            color: #fff;
+            border: 2px dashed rgb(243, 82, 82);
+        }
+
+
+      .container {
+        margin: 100px;
+      }
+
+      .my-button {
+        width: 100px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        background: #b71540;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      }
+      .my-button:hover {
+        background: #eb2f06;
+      }

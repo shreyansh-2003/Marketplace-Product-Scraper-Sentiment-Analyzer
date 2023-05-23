@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='graph_style.css')}}">
+<head>
+
+
+
+    <div style = "margin-bottom: 40px; margin-top: 45px; font-size: 30px; "><center>
+    <h1 >Comparing products on Amazon vs Flipkart<h1>
+        </center>
+    </div>
+
+    <div style = "font-size: 21px; font-weight: bold ;color: brown"><center>
+      <label  >Product Name (Queried) : {{prd}}</label><br>
+        <label >Brand Name : {{brd}}</label><br>
+    </center></div>
+
+    <div>
+    <h2><center>
+
+    <form action="{{url_for('displayGraphs')}}" method="POST">
+    <input style = "color: #ffffff;
+    background-color: #424242;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 18px; margin-bottom: 10px;
+    position: relative;" type="submit" id="Comp_Button" value = 'Comparative Analysis Page'></input>
+</form>
+
+
+
+    <form action="{{url_for('productsDisplay')}}" method="POST">
+    <input style = "color: #ffffff;
+    background-color: #424242;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 18px;
+    position: relative;" type="submit" id="Prod_Button" value = 'Products Page'></input>
+    </center></h2>
+        </form>
+
+
+
+    </div>
+</head>
+<body style="background-color:ivory;">
+
+<div><center><img src = "static/images/count.png" alt="Error : Count of Products listed on Amazon vs Flipkart for given Query"
+class = "center"></center></div>
+<div style = "font-size: 20px; font-weight : bold; color : brown;"><center>{{g1m1}}</center></br>
+    <center>{{g1m2}}</center></div>
+
+<div><center><img src="static/images/count_actual.png" alt="Snow" class = "center"></center></div>
+<div style = "font-size: 20px; font-weight : bold; color : brown;"><center>{{g2m1}}</center></br>
+    <center>{{g2m2}}</center></div>
+
+<div>
+    <center>
+    <iframe
+    src="static/images/name_price_line.html"
+    name="targetframe"
+    allowTransparency="true"
+    scrolling="no"
+    frameborder="0" width="900" height="600"
+>
+</iframe></center>
+</div>
+
+<div><center><img src="static/images/price_comp_line.png" alt="Snow" class = "center"></center></div>
+
+<div><center><img src="static/images/price_comp_box.png" alt="Snow" class = "center"></center></div>
+<div style = "font-size: 20px; font-weight : bold; color : brown;"><center>{{g3m1}}</center></br>
+    <center>{{g3m2}}</center></div>
+
+<div><center><img src="static/images/rating_box.png" alt="Snow" class = "center"></center></div>
+<div style = "font-size: 20px; font-weight : bold; color : brown;"><center>{{boxratm1}}</center></br>
+    <center>{{boxratm2}}</center></div>
+
+<div>
+    <center>
+    <iframe
+    src="static/images/price_rating_scatter.html"
+    name="targetframe"
+    allowTransparency="true"
+    scrolling="no"
+    frameborder="0" width="900" height="600"
+>
+</iframe></center>
+</div>
+<div style = "font-size: 20px; font-weight : bold; color : brown;"><center>{{corr_msg}}</center></div>
+</body>
+</html>
