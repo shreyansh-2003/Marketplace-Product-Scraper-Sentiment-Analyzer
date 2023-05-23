@@ -21,7 +21,6 @@ This project attempts to combine data analytics methodologies like KDD (Knowledg
 
 ---
 > ## REPOSITORY STRUCTURE
-<p align="justify">
 The __Src Scripts__ folder holds all the .py files, as Classes and user defined functions that can be called for their specific functionality.:
 1. __ProductReviewAnalysis.py__: NLP, comments pre-processing, sentiment analysis using VADER polarity score.
 2. __ProjectVisualisation.py__: The python script has functions that plots over 30 different kind of visualisations for both reviews and products.
@@ -52,9 +51,7 @@ The ```sample_driver_code.ipynb``` holds a small sample code on how to create a 
 | | |____index.html
 | | |____reviews_analysis.html
 | | |____static
-```
-   
-</p>
+
 
 ---
 > ## Data Sources and Collection
@@ -64,6 +61,7 @@ The impromptu response nature of the project required an on-demand and customiza
 The sources of the web scraped data were Amazon and Flipkart’s website. The collection involved a generalized algorithm of web scraping products and their information.
 
 The reviews scrapped module went through all the comments of the product and, post data scrubbing, storing the information in a dataset. Post scrapping the reviews the sentiment analysis module created by me, added 8 columns based on a ROBERTA and VADER model sentiment scores. These scores helped in generating an aggregate opinion (polarity) representative of all the customers.
+</p>
 
 There were two main datasets that were created through the process.
 - Web Scrapping Amazon (based on query (product given by client)
@@ -106,13 +104,14 @@ The comments scrapped dataset had the following variables:
 __Sample Comments/Review for a Condom (Amazon)__<br><br>
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/7f5618e3-0c1d-48fd-8b63-1f7035d55948)
 <br>
-</p>
+
 
 ---
 
 > ## Methodology
 <p align="justify">
 The process and methodology involved during the project were a robust and in-depth exploration of various components and fragments of KDD and data analytics.
+</p>
 
 1. Understanding requirements to handle the Problem Statement.
    - This first vital step made me realize the complexity of the project. Web-scrapping using Python Libraries had to be learnt from scratch using tutorials and library documentation.
@@ -140,7 +139,7 @@ The backend modules include:
   
 - __Cleaning data and transforming data while it’s being scrapped__
   - A major difference between traditional EDAs and models created by me in the past and this project was, I had to clean and make the data apt while it was being scrapped and before inserting it into the dataset. This involved using regex and string manipulation functions to extract relevant information and convert it into a usable format.
-</p>
+
 
 ---
 
