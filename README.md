@@ -18,6 +18,7 @@ The three underlying principles of e-confusion or customer confusion are similar
 <p align="justify">
 This project attempts to combine data analytics methodologies like KDD (Knowledge Discovery Database) and comparative analysis techniques to tackle an ever-lasting conundrum, that is settling the question, which platform is the best to buy your desired product from? Considering time constraints, the comparisons were limited to Amazon and Walmart subsidiary Flipkart. The same is done by web scraping the requested products query from Amazon and Flipkart, and further web-scrapping product reviews, enabling individual product-based sentimental analysis (Amazon Only).
 </p>
+
 ---
 > ## REPOSITORY STRUCTURE
 <p align="justify">
@@ -52,6 +53,7 @@ The ```sample_driver_code.ipynb``` holds a small sample code on how to create a 
 | | |____reviews_analysis.html
 | | |____static
 ```
+   
 </p>
 
 ---
@@ -105,6 +107,7 @@ __Sample Comments/Review for a Condom (Amazon)__<br><br>
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/7f5618e3-0c1d-48fd-8b63-1f7035d55948)
 <br>
 </p>
+
 ---
 
 > ## Methodology
@@ -138,10 +141,13 @@ The backend modules include:
 - __Cleaning data and transforming data while it’s being scrapped__
   - A major difference between traditional EDAs and models created by me in the past and this project was, I had to clean and make the data apt while it was being scrapped and before inserting it into the dataset. This involved using regex and string manipulation functions to extract relevant information and convert it into a usable format.
 </p>
+
 ---
 
 > ## Apendix
+
 <br>
+
 #### Sample Product Listing comparative analysis through visualisations
 <img width="1070" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/a20ba0cc-936b-4f8b-b701-09beb5294f50">
 <br><br>
