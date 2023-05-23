@@ -1,16 +1,19 @@
 # Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer
 This is an nlp, web-scrapping based ML capstone project, that allows users to retrieve datasets of the products listed on flipkart and amazon for the given product. Further, Sentiment Analysis can also be performed on the comments/reviews.
 
+---
 > ## Introduction
 Customer confusion has been on the uprising for the past decade, this psychological construct can be credited to the rampant e-commerce industry. In 2021, e-retail sales crossed a mammoth 5.2 trillion USD worldwide. Although the numbers can be assumed to be bloated, as a customer, the plethora of e-commerce websites to choose from has made purchasing decisions harder. Ill-informed decisions regarding buying a product can lead to mistrust in online shopping or financial disasters. It's imperative to keep the customers well-informed to keep them satisfied, it also saves ample of time while purchasing a product.
 
-
+---
 > ## Background
 The three underlying principles of e-confusion or customer confusion are similarity confusion, overload confusion, and unclarity confusion. But, in most developing countries like India, the biggest cause of consumer swingers’ is product price, rating, reviews and of course availability. Keeping this in mind, the project is aimed at building a thorough application to help users in deciding which product to buy from, and more importantly where from. The added feature of generating a sentiment analysis of the reviews made by customers, provides an in-depth understanding of the position of customers regarding the product. Opinion mining was an agenda that was exploited during the project, it helped in determining whether the overall customer experience of the customer is positive, neutral or negative in nature.
 
+---
 > ## Problem Statement
 This project attempts to combine data analytics methodologies like KDD (Knowledge Discovery Database) and comparative analysis techniques to tackle an ever-lasting conundrum, that is settling the question, which platform is the best to buy your desired product from? Considering time constraints, the comparisons were limited to Amazon and Walmart subsidiary Flipkart. The same is done by web scraping the requested products query from Amazon and Flipkart, and further web-scrapping product reviews, enabling individual product-based sentimental analysis (Amazon Only).
 
+---
 > ## REPOSITORY STRUCTURE
 
 The __Src Scripts__ folder holds all the .py files, as Classes and user defined functions that can be called for their specific functionality.:
@@ -45,6 +48,7 @@ The ```sample_driver_code.ipynb``` holds a small sample code on how to create a 
 | | |____static
 ```
 
+---
 > ## Data Sources and Collection
 The impromptu response nature of the project required an on-demand and customizable dataset generation, every time the user seeks a product. To tackle the complexity, we created three modules of web scraping for specific purposes and generating specific datasets.
 
@@ -66,7 +70,7 @@ The above datasets are merged and the final product dataset created with the web
 7. product_image_url
 8. product_url
 
-__Sample Product Listing (Amazon + Flipkart Dataset)__<br>
+__Sample Product Listing (Amazon + Flipkart Dataset)__<br><br>
 <img width="1132" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/6acf587e-87fb-439c-8707-0a2d48fc44a8">
 <br>
 
@@ -90,9 +94,11 @@ The comments scrapped dataset had the following variables:
 15. vader_neu
 
 
-__Sample Comments/Review for a Condom (Amazon)__<br>
+__Sample Comments/Review for a Condom (Amazon)__<br><br>
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/7f5618e3-0c1d-48fd-8b63-1f7035d55948)
 <br>
+
+---
 
 > ## Methodology
 The process and methodology involved during the project were a robust and in-depth exploration of various components and fragments of KDD and data analytics.
@@ -124,4 +130,14 @@ The backend modules include:
 - __Cleaning data and transforming data while it’s being scrapped__
   - A major difference between traditional EDAs and models created by me in the past and this project was, I had to clean and make the data apt while it was being scrapped and before inserting it into the dataset. This involved using regex and string manipulation functions to extract relevant information and convert it into a usable format.
 
+---
 
+> ## Apendix
+
+#### Sample Product Listing comparative analysis through visualisations
+<img width="1070" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/a20ba0cc-936b-4f8b-b701-09beb5294f50">
+
+#### Sample Reviews and NLP analysis through visualisations
+<img width="453" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/20d8579f-9331-4256-a733-ed4bb7d6388a">
+
+---
