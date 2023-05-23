@@ -6,6 +6,7 @@ This is an nlp, web-scrapping based ML capstone project, that allows users to re
 <p align="justify">
 Customer confusion has been on the uprising for the past decade, this psychological construct can be credited to the rampant e-commerce industry. In 2021, e-retail sales crossed a mammoth 5.2 trillion USD worldwide. Although the numbers can be assumed to be bloated, as a customer, the plethora of e-commerce websites to choose from has made purchasing decisions harder. Ill-informed decisions regarding buying a product can lead to mistrust in online shopping or financial disasters. It's imperative to keep the customers well-informed to keep them satisfied, it also saves ample of time while purchasing a product.
 </p>
+
 ---
 > ## Background
 <p align="justify">
@@ -19,7 +20,7 @@ This project attempts to combine data analytics methodologies like KDD (Knowledg
 </p>
 ---
 > ## REPOSITORY STRUCTURE
-
+<p align="justify">
 The __Src Scripts__ folder holds all the .py files, as Classes and user defined functions that can be called for their specific functionality.:
 1. __ProductReviewAnalysis.py__: NLP, comments pre-processing, sentiment analysis using VADER polarity score.
 2. __ProjectVisualisation.py__: The python script has functions that plots over 30 different kind of visualisations for both reviews and products.
@@ -51,9 +52,11 @@ The ```sample_driver_code.ipynb``` holds a small sample code on how to create a 
 | | |____reviews_analysis.html
 | | |____static
 ```
+</p>
 
 ---
 > ## Data Sources and Collection
+<p align="justify">
 The impromptu response nature of the project required an on-demand and customizable dataset generation, every time the user seeks a product. To tackle the complexity, we created three modules of web scraping for specific purposes and generating specific datasets.
 
 The sources of the web scraped data were Amazon and Flipkart’s website. The collection involved a generalized algorithm of web scraping products and their information.
@@ -74,7 +77,7 @@ The above datasets are merged and the final product dataset created with the web
 7. product_image_url
 8. product_url
 
-__Sample Product Listing (Amazon + Flipkart Dataset)__<br><br>
+__Sample Product Listing (Amazon + Flipkart Dataset)__ <br><br>
 <img width="1132" alt="image" src="https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/6acf587e-87fb-439c-8707-0a2d48fc44a8">
 <br>
 
@@ -101,10 +104,11 @@ The comments scrapped dataset had the following variables:
 __Sample Comments/Review for a Condom (Amazon)__<br><br>
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/7f5618e3-0c1d-48fd-8b63-1f7035d55948)
 <br>
-
+</p>
 ---
 
 > ## Methodology
+<p align="justify">
 The process and methodology involved during the project were a robust and in-depth exploration of various components and fragments of KDD and data analytics.
 
 1. Understanding requirements to handle the Problem Statement.
@@ -133,7 +137,7 @@ The backend modules include:
   
 - __Cleaning data and transforming data while it’s being scrapped__
   - A major difference between traditional EDAs and models created by me in the past and this project was, I had to clean and make the data apt while it was being scrapped and before inserting it into the dataset. This involved using regex and string manipulation functions to extract relevant information and convert it into a usable format.
-
+</p>
 ---
 
 > ## Apendix
