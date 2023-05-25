@@ -51,6 +51,8 @@ The ```sample_driver_code.ipynb``` holds a small sample code on how to create a 
 | | |____index.html
 | | |____reviews_analysis.html
 | | |____static
+|____Project Report (Pdf)
+|____Old Commit Runing (Screenshots)
 ```
 
 ---
