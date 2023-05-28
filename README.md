@@ -1,6 +1,8 @@
 # Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer
 This is an nlp, web-scrapping based ML capstone project, that allows users to retrieve datasets of the products listed on flipkart and amazon for the given product. Further, Sentiment Analysis can also be performed on the comments/reviews.
 
+![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/484e8640-568d-4076-807e-6a0b08bdbed4)
+
 ---
 > ## Introduction
 <p align="justify">
@@ -162,8 +164,8 @@ The backend modules include:
 
 
 #### Sample Reviews and NLP analysis through visualisations
-
 ![image](https://github.com/shreyansh-2003/Amazon-Flipkart-Product-Scraper-and-Sentiment-Analyzer/assets/105413094/484e8640-568d-4076-807e-6a0b08bdbed4)
+
 
 <br>
 
